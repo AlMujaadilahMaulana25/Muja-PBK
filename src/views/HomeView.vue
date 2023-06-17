@@ -1,5 +1,6 @@
 <template>
-  <h1>Welcome  To Do List Muja</h1>
+  <h1>Selamat Datang Di To Do List Muja</h1>
+  <P>Masukkan kegiatan pertama anda</P>
   <div>
     <input v-model="newTodo" placeholder="Masukkan Kegiatan">
     <button @click="addTodo">Tambah Kegiatan</button>
@@ -70,9 +71,10 @@ export default {
 </script>
 
 <style>
-*{
-  background-image: gambar1.jpg;
-  
+h1{
+  background-color: greenyellow;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
 }
 ul {
   list-style: none;
@@ -92,18 +94,8 @@ li {
 }
 button {
   margin-left: 10px;
+  border-radius: 20px;
+  background-color: orange;
+  color: white;
 }
-
-header {
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    justify-content: center;
-    animation: change 20s infinite ease-in-out;
-}
-
 </style>
